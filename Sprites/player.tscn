@@ -105,7 +105,7 @@ position = Vector2(9, 6)
 scale = Vector2(0.9, 0.923077)
 sprite_frames = SubResource("SpriteFrames_x2m1f")
 animation = &"shocked"
-frame_progress = 0.3374
+frame_progress = 0.952626
 speed_scale = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
