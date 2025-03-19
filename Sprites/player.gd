@@ -10,6 +10,10 @@ const JUMP_FORCE = -350  # Force applied when jumping
 
 func _physics_process(delta):
 	# Apply gravity
+	
+	if Input.is_action_pressed("exit"):
+		get_tree().quit(-1)
+	
 	if not is_on_floor():
 		velocity.y += gravity_strength * delta
 		velocity.y = clamp(velocity.y, -max_fall_speed, max_fall_speed) # Limit falling speed
